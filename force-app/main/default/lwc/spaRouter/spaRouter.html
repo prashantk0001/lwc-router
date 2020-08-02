@@ -1,0 +1,19 @@
+<template>
+    
+    <c-router-module>           <!--root c-router-module component , should be created only once-->
+
+        <!--
+            registrar c-router-module components
+            should register all pages at once
+        -->
+        <c-router-module register-page="home" is-default="true">
+            <c-router-test-home></c-router-test-home>                  <!-- component that represents a page -->
+        </c-router-module>
+        <c-router-module register-page="contacts">
+            <c-router-test-contacts></c-router-test-contacts>           <!-- component that represents a page -->
+        </c-router-module>
+
+
+    </c-router-module>
+
+</template>

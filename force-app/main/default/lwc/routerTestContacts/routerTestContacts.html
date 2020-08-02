@@ -1,0 +1,45 @@
+<template>
+
+    <button onclick={gotohome}>go to home</button>
+    <template if:true={contacts}>
+
+        <table class="slds-table slds-table_cell-buffer slds-no-row-hover slds-table_bordered">
+            <thead>
+                <tr class="slds-line-height_reset">
+                    <th class="" scope="col">
+                        <div class="slds-truncate" title="">Contact Name</div>
+                    </th>
+                    <th class="" scope="col">
+                        <div class="slds-truncate" title="">Id</div>
+                    </th>
+                    <th class="" scope="col">
+                        <div class="slds-truncate" title="">Actions</div>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <template for:each={contacts} for:item="contact">
+                    <tr key={contact.Id} class="slds-hint-parent">
+                        <th scope="row">
+                            <div class="slds-truncate" title="">
+                                <span style="color: blue;"
+                                    data-contactid={contact.Id} >
+                                    {contact.Name}
+                                </span>
+                            </div>
+                        </th>
+                        <td>
+                            <div class="slds-truncate" title="">
+                                {contact.Id}
+                            </div>
+                        </td>
+                        <td>
+                            <div class="slds-truncate" title="">
+                            </div>
+                        </td>
+                    </tr>
+                </template>
+            </tbody>
+        </table>
+    </template>
+</template>
