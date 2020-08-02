@@ -1,5 +1,7 @@
 # lwc-router
  Simple Router For Standalone LWC Single Page Application that works with communities, standalone lightning/aura applications.
+ 
+ ![lwc-router](docs/lwc-router.jpg)
 
 Maps a URL to lightning component that essentially represents a page/module in SPA.
 
