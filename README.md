@@ -5,6 +5,10 @@
 
 Maps a URL to lightning component that essentially represents a page/module in SPA.
 
+For this specifically, salesforce does not provide any routing even for LWC in lightning experience (similar to navigate to component for aura components) let alone in a standalone application.
+
+Keeping this in mind, here's lwc-router, which registers your components as LWC accessible components and even works when you bookmark them!!
+
 # Installation:
 Get all the LWC and apex classes deployed in your org and you're all set!
 
